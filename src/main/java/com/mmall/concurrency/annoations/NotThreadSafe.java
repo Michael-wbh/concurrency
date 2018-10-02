@@ -6,10 +6,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- *  课程中用来标记 【不推荐】的类或者写法
+ *  课程中用来标记 【线程不安全】的类或者写法
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.SOURCE)
-public @interface UnRecommend {
+public @interface NotThreadSafe {
     String value() default "";
 }
